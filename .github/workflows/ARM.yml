@@ -2,9 +2,8 @@ name: Build Bicep-ARM template
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    paths:
+      - 'main.bicep'
   workflow_dispatch:
 
 jobs:
