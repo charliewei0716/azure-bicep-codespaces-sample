@@ -1,0 +1,33 @@
+name: Build Bicep-ARM template
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install Bicep build
+        run: |
+          curl -Lo bicepinstall
+          https://github.com/Azure/bicep/releases/latest/download/bicep-linux-x64
+          chmod +x ./bicepinstall
+          sudo mv ./bicepinstall /usr/local/bin/bicep
+          bicep --help
+      
+      - name: Run Bicep build
+        run: |
+          bicep build main.bicep
+          ls -l *.json
+          
+      - uses: EndBug/add-and-commit@v9
+        with:
+          committer_name: GitHub Actions
+          committer_email: 41898282+github-actions[bot]@users.noreply.github.com
+          message: Update Bicep-ARM template
+          add: main.json
