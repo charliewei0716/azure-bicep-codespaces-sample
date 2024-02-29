@@ -5,14 +5,14 @@
     "_generator": {
       "name": "bicep",
       "version": "0.25.53.49325",
-      "templateHash": "8379812375232556876"
+      "templateHash": "7543069995713323547"
     }
   },
   "parameters": {
     "storageAccountName": {
       "type": "string",
       "defaultValue": "[format('store{0}', uniqueString(resourceGroup().id))]",
-      "minLength": 3,
+      "minLength": 4,
       "maxLength": 24
     },
     "storageAccountLocation": {
