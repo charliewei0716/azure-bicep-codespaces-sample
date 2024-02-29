@@ -28,4 +28,4 @@ This repository showcases a streamlined Azure Bicep development workflow from co
 
 ## Blog Post
 For more detailed explanations and insights about this project, check out my blog post:
-- [【Azure Bicep】blog post]()
+- [【Bicep】The Workflow of Bicep from Development to Deployment](https://www.charliewei.net/2024/02/bicep-from-development-to-deployment.html)
