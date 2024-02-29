@@ -1,4 +1,4 @@
-@minLength(3)
+@minLength(4)
 @maxLength(24)
 param storageAccountName string = 'store${uniqueString(resourceGroup().id)}'
 param storageAccountLocation string = resourceGroup().location
