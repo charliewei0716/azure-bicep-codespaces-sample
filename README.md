@@ -26,6 +26,6 @@ This repository showcases a streamlined Azure Bicep development workflow from co
     ```
 5. Edit [main.bicep](./main.bicep) in Codespaces to tailor your deployment, and apply changes by re-running the deployment command.
 
-## Blog Post
+## 🔗 Blog Post
 For more detailed explanations and insights about this project, check out my blog post:
 - [【Bicep】The Workflow of Bicep from Development to Deployment](https://www.charliewei.net/2024/02/bicep-from-development-to-deployment.html)
